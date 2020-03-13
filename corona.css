@@ -1,0 +1,38 @@
+#content {
+    display: flex;
+    flex-flow:row;
+}
+
+#vietnam {
+    background-color: rgb(211, 31, 31);
+    width: 50%;
+    background-image: url("https://brasol.vn/public/uploads/1521197951-brasol.vn-logo-dang-cong-san-viet-nam-flag-of-the-communist-party-of-vietnam.svg_.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#global {
+    background-color: red;
+    width: 50%;
+    height: 700px;
+    background-image: url('https://www.supplychaindigital.com/sites/default/files/styles/slider_detail/public/topic/image/GettyImages-1064982786.jpg?itok=0b9pzvbQ');
+    background-size: cover;
+}
+
+h1 {
+    color: aliceblue;
+    padding-left: 300px;
+}
+
+.globalmini {
+    color: rgb(236, 253, 0);
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.vietnammini {
+    color: rgb(19, 21, 155);
+    margin-bottom: 50px;
+    font-size: 50px;
+    
+}
