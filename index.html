@@ -3,15 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo|Caveat+Brush|Chewy|Lemonada&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <title>corona</title>
+    <title>COVID-19</title>
 </head>
 <body>
-    <div id="content">
-        
+    <div class="header">
+        <h1>VIRUS CORONA 2019</h1>
     </div>
-
+    <div id="body">
+        <div id="general" class="display">
+            <p>Việt Nam</p>
+            <div id="infected" class="general-items"></div>
+            <div id="recovered" class="general-items"></div>
+            <div id="treated" class="general-items"></div>
+            <div id="death" class="general-items"></div>
+        </div>
+        <div id="content" class="display">
+            <div class="table-scroll">
+                <p>Theo ngày</p>
+                <div class="scroll" style="overflow-y: auto;">
+                    <table id="table2"></table>
+                </div>
+            </div>
+            <div class="table-scroll">
+                <p>Chung</p>
+                <div class="scroll" style="overflow-y: auto;">
+                    <table id="table1"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"><p>By Subsitence</p></div>
 
     <script src="tkreq.js"></script>
     <script src="index.js"></script>

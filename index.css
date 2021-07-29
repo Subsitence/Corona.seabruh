@@ -1,52 +1,260 @@
-#content {
-    background-attachment: fixed;
-    background-size: cover;
+body{
+    background-color: rgb(58, 58, 78);
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+}
+
+.header{
+    overflow: hidden;
+    background-color: #272626;
+    padding: 20px 10px;
     display: flex;
-    flex-flow:row;
-    background-image: url("https://www.techrum.vn/chevereto/images/2016/08/15/X4ss5.jpg");
-    height: 750px;
+    color: #e4dcdc;
+    padding: 3px;
+    margin-bottom: 20px;
+}
+.header h1{
+    margin: auto;
+    margin-left: 150px;
 }
 
-#vietnam {
-    margin: 50px 75px 0px 80px;
-    opacity: 0.5;
-    background-color: black;
-    width: 40%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 600px;
+#body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: center;
+}
+
+#general{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    background-color: rgb(74, 75, 102);
+    width: 300px;
+    min-width: 200px;
+    border-radius: 20px;
+}
+#general h1{
+    font-size: 40px;
+}
+
+.general-items{
+    padding: 1vh 5vh 1vh 5vh;
+    border-radius: 20px;
+    text-align: center;
+}
+.general-items span{
+    font-size: 33px;
+}
+
+#infected{
+    color: rgb(255, 79, 79);
+}
+#recovered{
+    color: rgb(143, 255, 143);
+}
+#treated{
+    color: rgb(255, 255, 94);
+}
+#death{
+    color: rgb(230, 230, 230);
+}
+
+#content{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+#table1{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table2{
+    width: 100%;
+    float: left;
+    border-collapse: collapse;
+    margin-right: 20px;
+}
+
+#table1 tbody{
+    width: 100%;
+}
+thead {
+    position: sticky;
+    top: 0%;
+}
+
+
+table{
+    table-layout: fixed;
+}
+
+.tr-head th{
+    background-color: rgb(74, 75, 102);
+    font-size: 17px;
+    color: rgb(233, 229, 229);
+}
+
+
+td, th {
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    color: rgb(235, 235, 235);
+}
+
+.text{
+    text-transform: capitalize;
+}
+
+tr:hover{
+    background-color: rgb(62, 57, 87);
+}
+.scroll{
+    height: 80%;
+}
+
+.red{
+    color: rgb(255, 79, 66);
+}
+.green{
+    color: rgb(143, 255, 143);
+}
+
+.table-scroll{
+    height: 500px;
+    width: 45%;
+    min-width: 320px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: rgb(74, 75, 102);
+    padding: 2vh;
     border-radius: 20px;
 }
 
-#global {
-    margin:50px ;
-    opacity: 0.5;
-    background-color: black;
-    width: 40%;
-    height: 600px;
-    background-size: cover;
-    border-radius: 20px;
+p {
+    font-size: 40px;
+    color: white;
+    margin: 10px 0px 15px  0px;
+}
+#general p{
+    text-align: center;
 }
 
-h1 {
-    font-size: 75px;
-    color: rgb(203, 229, 255);
-    padding-left: 125px;
-    font-family: 'Lemonada', cursive;
+h1{
+    margin: 15px 0px 5px 0px;
 }
 
-.globalmini {
-    color: rgb(225, 235, 255);
-    margin-bottom: 50px;
-    font-size: 50px;
-    padding-left: 70px;
-    font-family: 'Caveat Brush', cursive;
+h3 {
+    margin: 5px 0px 10px 0px;
 }
 
-.vietnammini {
-    color: rgb(224, 255, 253);
-    margin-bottom: 50px;
-    font-size: 50px;
-    padding-left: 70px;
-    font-family: 'Caveat Brush', cursive;
+#death h3{
+    padding-bottom: 10px;
 }
+
+.footer{
+    width: 100%;
+    background-color: #323246;
+    bottom: 0;
+    height: 7vw;
+    margin-top: 30px;
+    
+}
+.footer p{
+    padding-top: 1vw;
+    color: #c5c5c5;
+    font-size: 2vw;
+    text-align: center;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    background-color:rgb(185, 185, 185);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(97, 97, 97); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(58, 58, 58); 
+  }
+
+
+  /* For tablets: */
+  @media only screen and (max-width:850px) {
+    .table-scroll{
+        width: 85%;
+    }
+    .header h1{
+        margin: auto;
+        text-align: center;
+    }
+    #body{
+        flex-flow: column;
+    }
+    #content{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+    #general{
+        flex-flow: row;
+        flex-wrap: wrap;
+        width: 85%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    #general p{
+        width: 100%;
+    }
+    #general h1, .general-items span{
+        font-size: 5vw;
+    }
+    .tr-head th{
+        font-size: 3vw;
+    }
+    td{
+        font-size: 3vw;
+    }
+    .footer{
+        height: 10vw;
+    }
+    .footer p{
+        font-size: 3vw;
+    }
+  }
+  
+  /* For mobile phones: */
+  @media only screen and (max-width:500px) {
+    .table-scroll{
+        width: 85%;
+    }
+    #treated, #death{
+        padding: 0px 5vw 0px 5vw;
+    }
+    
+  }
+
+
+
+
+
+
