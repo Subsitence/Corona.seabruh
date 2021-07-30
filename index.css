@@ -9,7 +9,7 @@ body{
     background-color: #272626;
     padding: 20px 10px;
     display: flex;
-    color: #e4dcdc;
+    color: #ececec;
     padding: 3px;
     margin-bottom: 20px;
 }
@@ -128,7 +128,7 @@ tr:hover{
 .table-scroll{
     height: 500px;
     width: 45%;
-    min-width: 320px;
+    min-width: 220px;
     margin: auto;
     margin-bottom: 20px;
     background-color: rgb(74, 75, 102);
@@ -225,9 +225,13 @@ h3 {
     #general p{
         width: 100%;
     }
-    #general h1, .general-items span{
+    #general h1{
         font-size: 5vw;
     }
+    .general-items span{
+        font-size: 4vw;
+    }
+
     .tr-head th{
         font-size: 3vw;
     }
@@ -239,6 +243,9 @@ h3 {
     }
     .footer p{
         font-size: 3vw;
+    }
+    .header h1{
+        font-size: 7vw;
     }
   }
   
